@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-text-base: #1f2937;
+    --color-text-muted: #6b7280;
+    --color-bg-base: #ffffff;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Klee One", serif;
+    color: #111827;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #7c3aed;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #6d28d9;
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.5);
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  background-color: #e5e7eb;
+  color: #111827;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #d1d5db;
+}
+
+.btn-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.5);
+}
+
+.container-custom {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.5rem 1rem;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  z-index: 50;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Responsive Background Images - Portrait (Mobile) versions */
+.bg-section-1-mobile {
+    background-image: url('/images/hero-bg.jpg');
+}
+
+.bg-section-2-mobile {
+  background-image: url('/images/section_2.jpg');
+}
+
+.bg-section-3-mobile {
+  background-image: url('/images/section_3d.jpg');
+}
+
+.bg-section-4-mobile {
+  background-image: url('/images/section_4.jpg');
+}
+
+.bg-section-5-mobile {
+  background-image: url('/images/section_5.jpg');
+}
+
+.bg-section-6-mobile {
+  background-image: url('/images/section_6.jpg');
+}
+
+/* Landscape (Desktop) versions - add -desktop suffix to your desktop-optimized images */
+@media (min-aspect-ratio: 3/4) {
+  .bg-section-1-desktop {
+    background-image: url('/images/light.jpg');
+  }
+
+  .bg-section-2-desktop {
+    background-image: url('/images/section_2d.jpg');
+  }
+
+  .bg-section-3-desktop {
+    background-image: url('/images/section_3d.jpg');
+  }
+
+  .bg-section-4-desktop {
+    background-image: url('/images/section_4d.jpg');
+  }
+
+  .bg-section-5-desktop {
+    background-image: url('/images/section_5d.jpg');
+  }
+
+  .bg-section-6-desktop {
+    background-image: url('/images/section_6d.jpg');
+  }
+}
