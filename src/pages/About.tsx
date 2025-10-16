@@ -13,14 +13,6 @@ const About = () => {
     { name: '儒教', nameEn: 'Confucianism', figure: '孔子', figureEn: 'Confucius' },
   ];
 
-  const ikuanTaoFigures = [
-    { name: '濟公活佛', nameEn: 'Ji Gong' },
-    { name: '關聖帝君', nameEn: 'Guan Gong' },
-    { name: '彌勒佛', nameEn: 'Maitreya Buddha' },
-    { name: '呂洞賓', nameEn: 'Lü Dongbin' },
-    { name: '孟子', nameEn: 'Mencius' },
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-16">
       <div className="container-custom">
