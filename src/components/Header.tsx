@@ -32,14 +32,14 @@ const Header = () => {
             <motion.img
               whileHover={{ scale: 1.05 }}
               src="/images/logo.svg"
-              alt={t('home.titleChinese')}
+              alt={t('home.title')}
               className="w-10 h-10"
             />
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold text-primary-600"
             >
-              <span className="font-klee">{t('home.titleChinese')}</span>
+              <span className="font-klee">{t('nav.title')}</span>
             </motion.div>
           </Link>
 
@@ -49,11 +49,10 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`relative px-3 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded ${
-                  isActive(item.path)
-                    ? 'text-primary-600'
-                    : 'text-gray-700 hover:text-primary-600'
-                }`}
+                className={`relative px-3 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded ${isActive(item.path)
+                  ? 'text-primary-600'
+                  : 'text-gray-700 hover:text-primary-600'
+                  }`}
                 aria-current={isActive(item.path) ? 'page' : undefined}
               >
                 {item.label}
@@ -117,11 +116,10 @@ const Header = () => {
                     key={item.path}
                     to={item.path}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`px-4 py-2 text-base font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 ${
-                      isActive(item.path)
-                        ? 'bg-primary-50 text-primary-600'
-                        : 'text-gray-700 hover:bg-gray-50'
-                    }`}
+                    className={`px-4 py-2 text-base font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 ${isActive(item.path)
+                      ? 'bg-primary-50 text-primary-600'
+                      : 'text-gray-700 hover:bg-gray-50'
+                      }`}
                     aria-current={isActive(item.path) ? 'page' : undefined}
                   >
                     {item.label}

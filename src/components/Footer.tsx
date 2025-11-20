@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Temple Info */}
           <div>
             <h3 className="text-xl font-bold text-white mb-4 font-klee">
-              {t('home.titleChinese')}
+              {t('home.title')}
             </h3>
             <p className="text-sm mb-2">{t('home.title')}</p>
             <p className="text-sm text-gray-400 mt-4">
@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">
-              {t('nav.home')}
+              {t('nav.links')}
             </h3>
             <ul className="space-y-2">
               <li>

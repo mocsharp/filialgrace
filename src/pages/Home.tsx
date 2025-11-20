@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
+import NewsSection from '../components/NewsSection';
+
 const Home = () => {
   const { t, i18n } = useTranslation();
   const isZh = i18n.language === 'zh';
@@ -8,42 +10,25 @@ const Home = () => {
   return (
     <div className="relative leading-none">
       {/* Section 1: Hero */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden block">
+      <section className="relative min-h-screen flex flex-col justify-end pb-12 overflow-hidden block">
         {/* Background Image - Mobile (portrait) version */}
         <div className="absolute inset-0 bg-section-1-mobile md:landscape:bg-section-1-desktop bg-cover bg-top bg-no-repeat" style={{ backgroundColor: '#f0f9ff' }}>
           {/* Gradient overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-200/40 via-indigo-100/30 to-white/35" />
-          {/* Pale yellow overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/60" />
+          {/* Warm overlay for temple feel */}
           <div className="absolute inset-0 bg-yellow-50/40" />
         </div>
 
-        <div className="relative z-10 text-center px-4 mt-[400px]">
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className={`text-5xl md:text-7xl font-black mb-6 text-gray-800 ${isZh ? 'font-klee' : ''}`}
-            style={{ textShadow: '2px 2px 4px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5)' }}
-          >
-            {t('home.titleChinese')}
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-2xl md:text-4xl font-bold text-gray-700"
-            style={{ textShadow: '1px 1px 3px rgba(255, 255, 255, 0.8)' }}
-          >
-            {t('home.title')}
-          </motion.p>
-        </div>
+
+        {/* News Section */}
+        <NewsSection />
 
         {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-8 right-8"
         >
           <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">
             <motion.div
@@ -54,6 +39,8 @@ const Home = () => {
           </div>
         </motion.div>
       </section>
+
+
 
       {/* Section 2: Divine Text */}
       <section
@@ -248,29 +235,33 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: false }}
-            className="space-y-8"
+            className="mb-12"
           >
-            <p className="text-4xl md:text-6xl font-klee leading-relaxed">
-              道在聖傳修在己 德由人蹟命由天
-            </p>
-            <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-klee mb-6 leading-relaxed">
               {t('home.wisdomText')}
-            </p>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              viewport={{ once: false }}
-              className="pt-8"
+            </h2>
+            <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: false }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+          >
+            <a
+              href="/about"
+              className="px-8 py-3 bg-amber-600 hover:bg-amber-500 text-white rounded-full font-medium transition-colors duration-300 shadow-lg shadow-amber-900/20"
             >
-              <a
-                href="/lectures"
-                className="btn-primary inline-block"
-                aria-label={t('nav.lectures')}
-              >
-                {t('nav.lectures')}
-              </a>
-            </motion.div>
+              {t('nav.about')}
+            </a>
+            <a
+              href="/contact"
+              className="px-8 py-3 bg-transparent border border-white/30 hover:bg-white/10 text-white rounded-full font-medium transition-colors duration-300 backdrop-blur-sm"
+            >
+              {t('nav.contact')}
+            </a>
           </motion.div>
         </div>
       </section>
