@@ -6,7 +6,7 @@
     --color-text-muted: #6b7280;
     --color-bg-base: #ffffff;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
@@ -94,52 +94,52 @@
 
 /* Responsive Background Images - Portrait (Mobile) versions */
 .bg-section-1-mobile {
-    background-image: url('/images/hero-bg.jpg');
+  background-image: url('/images/hero-bg.webp');
 }
 
 .bg-section-2-mobile {
-  background-image: url('/images/section_2.jpg');
+  background-image: url('/images/section_2.webp');
 }
 
 .bg-section-3-mobile {
-  background-image: url('/images/section_3.jpg');
+  background-image: url('/images/section_3.webp');
 }
 
 .bg-section-4-mobile {
-  background-image: url('/images/section_4.jpg');
+  background-image: url('/images/section_4.webp');
 }
 
 .bg-section-5-mobile {
-  background-image: url('/images/section_5.jpg');
+  background-image: url('/images/section_5.webp');
 }
 
 .bg-section-6-mobile {
-  background-image: url('/images/section_6.jpg');
+  background-image: url('/images/section_6.webp');
 }
 
 /* Landscape (Desktop) versions - add -desktop suffix to your desktop-optimized images */
 @media (min-aspect-ratio: 3/4) {
   .bg-section-1-desktop {
-    background-image: url('/images/light.jpg');
+    background-image: url('/images/hero-bg.webp');
   }
 
   .bg-section-2-desktop {
-    background-image: url('/images/section_2d.jpg');
+    background-image: url('/images/section_2d.webp');
   }
 
   .bg-section-3-desktop {
-    background-image: url('/images/section_3d.jpg');
+    background-image: url('/images/section_3d.webp');
   }
 
   .bg-section-4-desktop {
-    background-image: url('/images/section_4d.jpg');
+    background-image: url('/images/section_4d.webp');
   }
 
   .bg-section-5-desktop {
-    background-image: url('/images/section_5d.jpg');
+    background-image: url('/images/section_5d.webp');
   }
 
   .bg-section-6-desktop {
-    background-image: url('/images/section_6.jpg');
+    background-image: url('/images/section_6.webp');
   }
 }

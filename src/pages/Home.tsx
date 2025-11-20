@@ -16,7 +16,7 @@ const Home = () => {
           {/* Pale yellow overlay */}
           <div className="absolute inset-0 bg-yellow-50/40" />
         </div>
-        
+
         <div className="relative z-10 text-center px-4 mt-[400px]">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -56,12 +56,15 @@ const Home = () => {
       </section>
 
       {/* Section 2: Divine Text */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section
+        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        aria-label={t('home.divineText')}
+      >
         {/* Background Image - Mobile (portrait) version */}
-        <div className="absolute inset-0 bg-section-2-mobile bg-section-2-desktop bg-cover bg-center bg-no-repeat" style={{ backgroundColor: '#92400e' }}>
+        <div className="absolute inset-0 bg-section-2-mobile bg-section-2-desktop bg-cover bg-center bg-no-repeat" style={{ backgroundColor: '#92400e' }} role="img" aria-label="Temple interior background">
           <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/40 via-amber-500/30 to-orange-400/30" />
         </div>
-        
+
         <div className="relative z-10 text-white px-4 w-full h-full flex items-center justify-center">
           {/* Vertical Three-Column Layout */}
           <motion.div
@@ -72,7 +75,7 @@ const Home = () => {
             viewport={{ once: false }}
           >
             {/* Left Column: 三界十方 - aligned with 無量清虛 */}
-            <div className="flex flex-col items-center gap-2 text-3xl md:text-5xl font-klee self-center">
+            <div className="flex flex-col items-center gap-2 text-3xl md:text-5xl font-klee self-center" aria-hidden="true">
               <span>三</span>
               <span>界</span>
               <span>十</span>
@@ -80,7 +83,8 @@ const Home = () => {
             </div>
 
             {/* Center Column: 明明上帝 無量清虛 萬靈真宰 */}
-            <div className="flex flex-col items-center gap-2 text-4xl md:text-6xl font-klee">
+            <h2 className="sr-only">{t('home.divineText')}</h2>
+            <div className="flex flex-col items-center gap-2 text-4xl md:text-6xl font-klee" aria-hidden="true">
               <span>明</span>
               <span>明</span>
               <span>上</span>
@@ -98,7 +102,7 @@ const Home = () => {
             </div>
 
             {/* Right Column: 至尊至聖 - aligned with 無量清虛 */}
-            <div className="flex flex-col items-center gap-2 text-3xl md:text-5xl font-klee self-center">
+            <div className="flex flex-col items-center gap-2 text-3xl md:text-5xl font-klee self-center" aria-hidden="true">
               <span>至</span>
               <span>尊</span>
               <span>至</span>
@@ -118,7 +122,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-section-3-mobile bg-section-3-desktop bg-cover bg-top bg-no-repeat" style={{ backgroundColor: '#fef3c7' }}>
           <div className="absolute inset-0 bg-gradient-to-br from-amber-200/40 via-yellow-100/30 to-white/35" />
         </div>
-        
+
         <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 py-16">
           {/* Vertical Text - Left Aligned: 彌勒佛 */}
           <motion.div
@@ -134,7 +138,7 @@ const Home = () => {
           </motion.div>
         </div>
         {/* Bottom fade for smooth transition */}
-        <motion.div 
+        <motion.div
           className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-cyan-100/50 z-20"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -146,7 +150,7 @@ const Home = () => {
       {/* Section 4: Wisdom Text - Part 1 */}
       <section className="relative h-screen flex items-center justify-end overflow-hidden">
         {/* Top fade for smooth transition */}
-        <motion.div 
+        <motion.div
           className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-cyan-100/50 to-transparent z-20"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -157,7 +161,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-section-4-mobile bg-section-4-desktop bg-cover bg-top bg-no-repeat" style={{ backgroundColor: '#ecfeff' }}>
           <div className="absolute inset-0 bg-gradient-to-br from-sky-200/40 via-cyan-100/30 to-white/35" />
         </div>
-        
+
         <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 py-16">
           {/* Vertical Text - Right Aligned: 道在聖傳修在己 */}
           <motion.div
@@ -174,7 +178,7 @@ const Home = () => {
           </motion.div>
         </div>
         {/* Bottom fade for smooth transition */}
-        <motion.div 
+        <motion.div
           className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-pink-100/50 z-20"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -186,7 +190,7 @@ const Home = () => {
       {/* Section 5: Wisdom Text - Part 2 */}
       <section className="relative min-h-screen flex items-center justify-start overflow-hidden">
         {/* Top fade for smooth transition */}
-        <motion.div 
+        <motion.div
           className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-pink-100/50 to-transparent z-20"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -197,7 +201,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-section-5-mobile bg-section-5-desktop bg-cover bg-top bg-no-repeat" style={{ backgroundColor: '#fef2f2' }}>
           <div className="absolute inset-0 bg-gradient-to-br from-rose-200/40 via-pink-100/30 to-white/35" />
         </div>
-        
+
         <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 py-16">
           {/* Vertical Text - Left Aligned: 德由人蹟命由天 */}
           <motion.div
@@ -214,7 +218,7 @@ const Home = () => {
           </motion.div>
         </div>
         {/* Bottom fade for smooth transition */}
-        <motion.div 
+        <motion.div
           className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-slate-900/50 z-20"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -226,7 +230,7 @@ const Home = () => {
       {/* Section 6: Full Wisdom Text with CTA */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
         {/* Top fade for smooth transition */}
-        <motion.div 
+        <motion.div
           className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-slate-900/50 to-transparent z-20"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -237,7 +241,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-section-6-mobile bg-section-6-desktop bg-cover bg-top bg-no-repeat" style={{ backgroundColor: '#0f172a' }}>
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-gray-800/70 to-zinc-900/80" />
         </div>
-        
+
         <div className="relative z-10 text-center text-white px-4 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
