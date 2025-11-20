@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { config } from '../config';
 
 const NewsSection = () => {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const isZh = i18n.language === 'zh';
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const [canScrollLeft, setCanScrollLeft] = useState(false);

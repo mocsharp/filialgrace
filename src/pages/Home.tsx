@@ -4,8 +4,7 @@ import { motion } from 'framer-motion';
 import NewsSection from '../components/NewsSection';
 
 const Home = () => {
-  const { t, i18n } = useTranslation();
-  const isZh = i18n.language === 'zh';
+  const { t } = useTranslation();
 
   return (
     <div className="relative leading-none">
