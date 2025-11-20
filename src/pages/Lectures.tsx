@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
+import { config } from '../config';
+
 const Lectures = () => {
   const { t, i18n } = useTranslation();
   const isZh = i18n.language === 'zh';
@@ -96,7 +98,9 @@ const Lectures = () => {
                   </div>
                 </div>
                 <a
-                  href="#register-study-group"
+                  href={config.studyGroupRegistrationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full text-center inline-block px-6 py-3 text-white font-medium rounded-lg transition-colors"
                   style={{ backgroundColor: '#7c3aed' }}
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6d28d9'}
@@ -180,7 +184,7 @@ const Lectures = () => {
               <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <p className="text-gray-700 text-lg">
-              {isZh 
+              {isZh
                 ? '有關課程的更多資訊，請透過聯絡頁面與我們聯繫。'
                 : 'For more information about our classes, please contact us through the Contact page.'
               }
