@@ -7,28 +7,28 @@ const resources = {
     translation: {
       // Navigation 
       nav: {
+        links: 'Site Index',
         home: 'Home',
         lectures: 'Lectures',
         about: 'About',
-        contact: 'Contact'
+        contact: 'Contact',
+        title: '孝恩佛堂 Temple of Filial Grace',
       },
       // Home Page
       home: {
         title: 'Temple of Filial Grace',
-        titleChinese: '孝恩佛堂',
+
         subtitle: 'A Place of Spiritual Harmony',
         divineText: 'Ming Ming Shang Di Wu Liang Qing Xu Zhi Zun Zhi Sheng San Jie Shi Fang Wan Ling Zhen Zai',
-        wisdomText: 'The Way is Transmitted by Saints, Cultivation Depends on Oneself; Virtue Comes from Actions, Destiny from Heaven',
+        wisdomText: 'Tao is Transmitted by Saints, Cultivation Depends on Oneself; Virtue Comes from Actions, Destiny from Heaven',
         fiveReligionsText: 'Unity of Five Religions: Confucianism, Buddhism, Taoism, Christianity, Islam'
       },
       // Lectures Page
       lectures: {
         title: 'Lectures',
-        titleChinese: '課程',
         subtitle: 'Class Offerings',
         studyGroup: {
           title: 'Study Group',
-          titleChinese: '讀書會',
           topic: 'Topic',
           currentTopic: 'Heart Sutra',
           schedule: 'Monthly on Sundays, 10:00 AM - 11:30 AM',
@@ -36,7 +36,6 @@ const resources = {
         },
         childrenClass: {
           title: "Children's Scripture Class",
-          titleChinese: '兒童讀經班',
           topic: 'Activities',
           currentTopic: 'Good Pupil and Child, Art & Craft...',
           schedule: 'TBD',
@@ -46,10 +45,8 @@ const resources = {
       // About Page
       about: {
         title: 'About Us',
-        titleChinese: '關於我們',
         templeDescription: 'The Temple of Filial Grace (孝恩佛堂) is dedicated to promoting the teachings of Buddhism, Taoism, and the Confucian ideals of Confucius and Mencius. It aspires to help more people understand the divine wisdom of enlightened beings and to apply these teachings in everyday life to cultivate one\'s moral and spiritual refinement. Through spiritual practice and self-reflection, individuals can attain harmony and balance of body, mind, and spirit, inspiring those around them and fostering social harmony. May this path of cultivation bring peace and stability to our troubled world, and may the ideal of the “Great Unity” envisioned by Confucius soon be realized.',
         purposeTitle: 'The Purpose of Tao',
-        purposeTitleChinese: '道之宗旨',
         fiveReligionsTitle: 'Five Great Religions',
         callToAction: 'Join our lectures to learn more about the wisdom of the Heavenly Way.',
         purposeItems: [
@@ -78,7 +75,6 @@ const resources = {
       // Contact Page
       contact: {
         title: 'Contact Us',
-        titleChinese: '聯絡我們',
         email: 'Email',
         location: 'Location',
         findUs: 'Find Us',
@@ -108,36 +104,35 @@ const resources = {
     translation: {
       // Navigation
       nav: {
+        links: '網站索引',
         home: '首頁',
         lectures: '課程',
         about: '關於我們',
-        contact: '聯絡我們'
+        contact: '聯絡我們',
+        title: '孝恩佛堂 Temple of Filial Grace',
       },
       // Home Page
       home: {
-        title: 'Temple of Filial Grace',
-        titleChinese: '孝恩佛堂',
+        title: '孝恩佛堂',
+
         subtitle: '心靈和諧之所',
         divineText: '明明上帝 無量清虛 至尊至聖 三界十方 萬靈真宰',
-        wisdomText: 'The Way is Transmitted by Saints, Cultivation Depends on Oneself; Virtue Comes from Actions, Destiny from Heaven',
+        wisdomText: '道在聖傳修在己 德由人蹟命由天',
         fiveReligionsText: '五教合一：儒 釋 道 耶 回'
       },
       // Lectures Page
       lectures: {
-        title: 'Lectures',
-        titleChinese: '課程',
+        title: '課程',
         subtitle: '目前課程',
         studyGroup: {
-          title: 'Study Group',
-          titleChinese: '讀書會',
+          title: '讀書會',
           topic: '主題',
           currentTopic: '般若波羅蜜多心經',
           schedule: '每個月一次 週日早上 10:00 - 11:30',
           registerLink: '報名讀書會'
         },
         childrenClass: {
-          title: 'Children\'s Scripture Class',
-          titleChinese: '兒童讀經班',
+          title: '兒童讀經班',
           topic: '活動',
           currentTopic: '弟子規，美術勞作...',
           schedule: '不定期上課',
@@ -147,10 +142,8 @@ const resources = {
       // About Page
       about: {
         title: '關於我們',
-        titleChinese: '關於我們',
         templeDescription: '孝恩佛堂為天道發一組圓通設立於西雅圖的佛堂。佛堂旨在弘揚佛學、道學與孔孟思想，期望藉此讓更多人深入了解仙佛神聖的智慧，並在日常生活中付諸實踐，以提升自我修養。透過修行與反思，達到身心靈的圓融與和諧，進而啟發身邊之人，共創社會祥和。願此修行之道為紛亂的世界帶來一份安定與平靜，並祈願孔子所倡之「大同世界」早日實現。',
         purposeTitle: '道之宗旨',
-        purposeTitleChinese: '道之宗旨',
         fiveReligionsTitle: '五大宗教',
         callToAction: '歡迎加入我們的課程，深入了解天道的智慧。',
         purposeItems: [
@@ -177,8 +170,7 @@ const resources = {
       },
       // Contact Page
       contact: {
-        title: 'Contact Us',
-        titleChinese: '聯絡我們',
+        title: '聯絡我們',
         email: '電子郵件',
         location: '地點',
         findUs: '尋找我們',

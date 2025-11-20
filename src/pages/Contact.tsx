@@ -16,11 +16,8 @@ const Contact = () => {
           {/* Page Header */}
           <div className="text-center mb-16">
             <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${isZh ? 'font-klee' : ''}`}>
-              {t('contact.titleChinese')}
-            </h1>
-            <p className="text-xl text-gray-600">
               {t('contact.title')}
-            </p>
+            </h1>
             <div className="w-24 h-1 bg-primary-600 mx-auto mt-6" />
           </div>
 

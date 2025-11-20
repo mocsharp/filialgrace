@@ -39,11 +39,8 @@ const Lectures = () => {
           {/* Page Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${isZh ? 'font-klee' : ''}`}>
-              {t('lectures.titleChinese')}
-            </h1>
-            <p className="text-xl text-gray-600">
               {t('lectures.title')}
-            </p>
+            </h1>
             <div className="w-24 h-1 bg-primary-600 mx-auto mt-6" />
           </motion.div>
 
@@ -64,11 +61,8 @@ const Lectures = () => {
             >
               <div className="p-6 text-white" style={{ backgroundColor: '#7c3aed' }}>
                 <h3 className={`text-2xl md:text-3xl font-bold mb-2 ${isZh ? 'font-klee' : ''}`}>
-                  {t('lectures.studyGroup.titleChinese')}
-                </h3>
-                <p className="text-lg opacity-90">
                   {t('lectures.studyGroup.title')}
-                </p>
+                </h3>
               </div>
               <div className="p-8">
                 <div className="mb-6">
@@ -120,11 +114,8 @@ const Lectures = () => {
             >
               <div className="bg-pink-500 p-6 text-white">
                 <h3 className={`text-2xl md:text-3xl font-bold mb-2 ${isZh ? 'font-klee' : ''}`}>
-                  {t('lectures.childrenClass.titleChinese')}
-                </h3>
-                <p className="text-lg opacity-90">
                   {t('lectures.childrenClass.title')}
-                </p>
+                </h3>
               </div>
               <div className="p-8">
                 <div className="mb-6">

@@ -24,11 +24,8 @@ const About = () => {
           {/* Page Header */}
           <div className="text-center mb-16">
             <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${isZh ? 'font-klee' : ''}`}>
-              {t('about.titleChinese')}
-            </h1>
-            <p className="text-xl text-gray-600">
               {t('about.title')}
-            </p>
+            </h1>
             <div className="w-24 h-1 bg-primary-600 mx-auto mt-6" />
           </div>
 
@@ -41,7 +38,7 @@ const About = () => {
           >
             <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
               <h2 className={`text-3xl font-bold mb-6 text-center ${isZh ? 'font-klee' : ''}`}>
-                {t('home.titleChinese')}
+                {t('home.title')}
               </h2>
               <p className={`text-lg text-gray-700 leading-relaxed ${isZh ? 'font-klee' : ''}`}>
                 {t('about.templeDescription')}
@@ -58,7 +55,7 @@ const About = () => {
           >
             <div className="bg-gradient-to-br from-primary-50 to-purple-50 rounded-2xl shadow-lg p-8 md:p-12">
               <h2 className={`text-3xl font-bold mb-6 text-center ${isZh ? 'font-klee' : ''}`}>
-                {isZh ? t('about.purposeTitleChinese') : t('about.purposeTitle')}
+                {t('about.purposeTitle')}
               </h2>
               <div className={`text-lg text-gray-700 leading-relaxed ${isZh ? 'font-klee text-center' : 'text-left'} space-y-3`}>
                 {t('about.purposeItems', { returnObjects: true }) && (
