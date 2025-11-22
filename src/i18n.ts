@@ -110,7 +110,8 @@ const resources = {
         lectures: '課程',
         about: '關於我們',
         contact: '聯絡我們',
-        title: '孝恩佛堂 Temple of Filial Grace',
+        title: '孝恩佛堂',
+        subtitle: 'Temple of Filial Grace',
       },
       // Home Page
       home: {
