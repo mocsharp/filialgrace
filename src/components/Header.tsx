@@ -40,6 +40,7 @@ const Header = () => {
               className="text-2xl font-bold text-primary-600"
             >
               <span className="font-klee">{t('nav.title')}</span>
+              <span className="font-klee text-base ml-2">{t('nav.subtitle')}</span>
             </motion.div>
           </Link>
 

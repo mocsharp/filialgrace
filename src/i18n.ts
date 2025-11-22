@@ -12,7 +12,8 @@ const resources = {
         lectures: 'Lectures',
         about: 'About',
         contact: 'Contact',
-        title: '孝恩佛堂 Temple of Filial Grace',
+        title: '孝恩佛堂',
+        subtitle: 'Temple of Filial Grace',
       },
       // Home Page
       home: {
