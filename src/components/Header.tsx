@@ -9,7 +9,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'zh' : 'en';
+    const newLang = i18n.language.startsWith('en') ? 'zh' : 'en';
     i18n.changeLanguage(newLang);
     document.documentElement.lang = newLang === 'zh' ? 'zh-Hant' : 'en';
   };
@@ -70,9 +70,9 @@ const Header = () => {
             <button
               onClick={toggleLanguage}
               className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
-              aria-label={`Switch to ${i18n.language === 'en' ? 'Chinese' : 'English'}`}
+              aria-label={`Switch to ${i18n.language.startsWith('en') ? 'Chinese' : 'English'}`}
             >
-              {i18n.language === 'en' ? '中文' : 'EN'}
+              {i18n.language.startsWith('en') ? '中文' : 'EN'}
             </button>
           </div>
 
@@ -132,7 +132,7 @@ const Header = () => {
                   }}
                   className="px-4 py-2 text-base font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors text-left focus:outline-none focus:ring-2 focus:ring-primary-500"
                 >
-                  {i18n.language === 'en' ? '切換至中文' : 'Switch to English'}
+                  {i18n.language.startsWith('en') ? '切換至中文' : 'Switch to English'}
                 </button>
               </div>
             </motion.div>
