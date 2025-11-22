@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="relative leading-none">
       {/* Section 1: Hero */}
-      <section className="relative min-h-screen flex flex-col justify-end pb-12 overflow-hidden block">
+      <section className="relative min-h-screen flex flex-col justify-end pb-0 overflow-hidden block">
         {/* Background Image - Mobile (portrait) version */}
         <div className="absolute inset-0 bg-section-1-mobile md:landscape:bg-section-1-desktop bg-cover bg-top bg-no-repeat" style={{ backgroundColor: '#f0f9ff' }}>
           {/* Gradient overlay for better text readability */}
