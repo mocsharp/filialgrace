@@ -59,7 +59,7 @@ const NewsSection = () => {
 
     const scroll = (direction: 'left' | 'right') => {
         if (scrollContainerRef.current) {
-            const scrollAmount = 340; // card width + gap
+            const scrollAmount = 420; // card width + gap
             scrollContainerRef.current.scrollBy({
                 left: direction === 'left' ? -scrollAmount : scrollAmount,
                 behavior: 'smooth'
@@ -80,7 +80,7 @@ const NewsSection = () => {
     }
 
     return (
-        <section className="py-8 bg-transparent overflow-hidden">
+        <section className="pt-8 pb-0 bg-transparent overflow-hidden">
             <div className="container-custom">
                 <div className="relative group">
                     {/* Left Arrow */}
@@ -118,7 +118,7 @@ const NewsSection = () => {
                                 <Link
                                     key={index}
                                     to={item.link}
-                                    className="snap-center shrink-0 w-[300px] group/card"
+                                    className="snap-center shrink-0 w-[380px] group/card"
                                 >
                                     <motion.div
                                         initial={{ opacity: 0, y: 20 }}
