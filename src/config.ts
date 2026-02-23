@@ -12,9 +12,14 @@ export interface NewsItem {
 }
 
 export const config = {
-    studyGroupRegistrationUrl: 'https://forms.gle/Ue1nD5Rb4otxcqzP8',
+    studyGroupRegistrationUrl: 'https://forms.gle/JvUZngmcXHiMV7FC6',
     news: [
         {
+            date: '2026-02-23',
+            title: {
+                en: 'March 2026 Reading Group',
+                zh: '2026年三月讀書會',
+            },
             date: '2025-11-20',
             title: {
                 en: 'January 2026 Reading Group',
