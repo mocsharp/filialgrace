@@ -20,6 +20,13 @@ export const config = {
                 en: 'March 2026 Reading Group',
                 zh: '2026年三月讀書會',
             },
+            description: {
+                en: 'March 2026 Reading Group is now open for registration.',
+                zh: '2026年三月讀書會開始報名囉，誠摯歡迎大家報名參加。',
+            },
+            link: '/lectures',
+        },
+        {
             date: '2025-11-20',
             title: {
                 en: 'January 2026 Reading Group',
