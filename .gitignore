@@ -73,3 +73,8 @@ Desktop.ini
 # Vite
 .vite
 vite.config.*.timestamp-*
+
+# Local agent/session memory (not project guidance)
+AGENTS.md
+CLAUDE.md
+.claude/

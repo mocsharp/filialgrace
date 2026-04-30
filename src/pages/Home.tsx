@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 import NewsSection from '../components/NewsSection';
 
@@ -9,18 +10,22 @@ const Home = () => {
   return (
     <div className="relative leading-none">
       {/* Section 1: Hero */}
-      <section className="relative min-h-screen flex flex-col justify-end pb-0 overflow-hidden block">
+      <section className="relative min-h-screen flex flex-col justify-between pb-0 overflow-hidden block">
         {/* Background Image - Mobile (portrait) version */}
-        <div className="absolute inset-0 bg-section-1-mobile md:landscape:bg-section-1-desktop bg-cover bg-top bg-no-repeat" style={{ backgroundColor: '#f0f9ff' }}>
+        <div className="absolute inset-0 bg-section-1-mobile bg-section-1-desktop bg-cover bg-top bg-no-repeat" style={{ backgroundColor: '#f0f9ff' }}>
           {/* Gradient overlay for better text readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/60" />
           {/* Warm overlay for temple feel */}
           <div className="absolute inset-0 bg-yellow-50/40" />
         </div>
 
+        {/* Spacer to keep hero layout below fixed header */}
+        <div className="pt-24 md:pt-32" />
 
         {/* News Section */}
-        <NewsSection />
+        <div className="relative z-10">
+          <NewsSection />
+        </div>
 
         {/* Scroll indicator */}
         <motion.div
@@ -249,18 +254,18 @@ const Home = () => {
             viewport={{ once: false }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="px-8 py-3 bg-amber-600 hover:bg-amber-500 text-white rounded-full font-medium transition-colors duration-300 shadow-lg shadow-amber-900/20"
             >
               {t('nav.about')}
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               className="px-8 py-3 bg-transparent border border-white/30 hover:bg-white/10 text-white rounded-full font-medium transition-colors duration-300 backdrop-blur-sm"
             >
               {t('nav.contact')}
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

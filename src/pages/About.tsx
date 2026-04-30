@@ -105,6 +105,36 @@ const About = () => {
           </motion.div>
 
 
+          {/* Nonprofit Information */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="max-w-3xl mx-auto mb-16"
+          >
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 text-center">
+              <h2 className={`text-2xl font-bold mb-4 ${isZh ? 'font-klee' : ''}`}>
+                {t('nonprofit.sectionTitle')}
+              </h2>
+              <p className={`text-base text-gray-700 mb-3 leading-relaxed ${isZh ? 'font-klee' : ''}`}>
+                {t('nonprofit.statusLine')}
+              </p>
+              <p className="text-sm text-gray-600">
+                <span className={isZh ? 'font-klee' : ''}>{t('nonprofit.einLabel')}: </span>
+                <span
+                  aria-label="EIN 92-3543710"
+                  className="font-mono tracking-wide select-all"
+                >
+                  <span>92</span>
+                  <span aria-hidden="true">{'‑'}</span>
+                  <span>3</span>
+                  <span>543</span>
+                  <span>710</span>
+                </span>
+              </p>
+            </div>
+          </motion.div>
+
           {/* Call to Action */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

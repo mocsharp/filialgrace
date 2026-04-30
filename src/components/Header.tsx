@@ -17,6 +17,7 @@ const Header = () => {
   const navItems = [
     { path: '/', label: t('nav.home') },
     { path: '/lectures', label: t('nav.lectures') },
+    { path: '/calendar', label: t('nav.calendar') },
     { path: '/about', label: t('nav.about') },
     { path: '/contact', label: t('nav.contact') },
   ];

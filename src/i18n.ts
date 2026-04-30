@@ -5,11 +5,12 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
   en: {
     translation: {
-      // Navigation 
+      // Navigation
       nav: {
         links: 'Site Index',
         home: 'Home',
         lectures: 'Lectures',
+        calendar: 'Calendar',
         about: 'About',
         contact: 'Contact',
         title: '孝恩佛堂',
@@ -86,6 +87,19 @@ const resources = {
         welcomeMessage: 'We welcome all who are interested in learning about the Heavenly Way. Please feel free to contact us for more information.',
         visitLectures: 'Visit our Lectures page to learn about our current offerings.'
       },
+      // Nonprofit info (shown on About page)
+      nonprofit: {
+        sectionTitle: 'Nonprofit Information',
+        statusLine: 'Temple of Filial Grace is a registered 501(c)(3) nonprofit religious organization in Washington State.',
+        einLabel: 'Federal Tax ID (EIN)',
+      },
+      // Calendar Page
+      calendar: {
+        title: 'Calendar',
+        subtitle: 'Upcoming Events & Classes',
+        intro: 'View our upcoming services, study groups, and community gatherings. Add events to your own calendar by clicking on them.',
+        openInGoogle: 'Open in Google Calendar',
+      },
       // Footer
       footer: {
         copyright: '© 2025 Temple of Filial Grace. All rights reserved.',
@@ -108,6 +122,7 @@ const resources = {
         links: '網站索引',
         home: '首頁',
         lectures: '課程',
+        calendar: '行事曆',
         about: '關於我們',
         contact: '聯絡我們',
         title: '孝恩佛堂',
@@ -182,6 +197,19 @@ const resources = {
         interestedInLectures: '有興趣參加我們的課程嗎？',
         welcomeMessage: '我們歡迎所有對天道教義感興趣的朋友。請隨時與我們聯繫以獲取更多資訊。',
         visitLectures: '歡迎瀏覽我們的課程頁面，了解目前提供的課程。'
+      },
+      // Nonprofit info (shown on About page)
+      nonprofit: {
+        sectionTitle: '非營利組織資訊',
+        statusLine: '孝恩佛堂為華盛頓州註冊之 501(c)(3) 非營利宗教組織。',
+        einLabel: '聯邦稅號 (EIN)',
+      },
+      // Calendar Page
+      calendar: {
+        title: '行事曆',
+        subtitle: '近期活動與課程',
+        intro: '歡迎瀏覽我們即將舉辦的法會、讀書會與社群活動。點擊活動可加入您的個人行事曆。',
+        openInGoogle: '在 Google 行事曆中開啟',
       },
       // Footer
       footer: {

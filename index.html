@@ -22,33 +22,41 @@
     </script>
     
     <!-- Primary Meta Tags -->
-    <title>孝恩佛堂 Temple of Filial Grace | Seattle I-Kuan Tao Center</title>
-    <meta name="title" content="孝恩佛堂 Temple of Filial Grace | Seattle I-Kuan Tao Center" />
+    <title>孝恩佛堂 Temple of Filial Grace</title>
+    <meta name="title" content="孝恩佛堂 Temple of Filial Grace" />
     <meta name="description" content="Temple of Filial Grace (孝恩佛堂) in Seattle - A spiritual center promoting harmony through Buddhism, Christianity, Islam, Taoism, and Confucianism. Join our study groups and children's classes." />
-    <meta name="keywords" content="一貫道, 天道, Yiguandao, I-Kuan Tao, 佛教, Buddhism, 基督教, Christianity, 回教, Islam, 道教, Taoism, 儒教, Confucianism, 西雅圖, Seattle, 孝恩佛堂, Filial Grace, Redmond, 98053, 釋迦牟尼佛, Buddha, 耶穌基督, Jesus Christ, 穆罕默德, Muhammad, 老子, Laozi, 孔子, Confucius, 濟公活佛, Ji Gong, 關聖帝君, Guan Gong, 彌勒佛, Maitreya, 月慧菩薩, 觀世音菩薩, 南海古佛" />
+    <meta name="keywords" content="天道, Tian Tao, Heavenly Way, 佛教, Buddhism, 基督教, Christianity, 回教, Islam, 道教, Taoism, 儒教, Confucianism, 西雅圖, Seattle, 孝恩佛堂, Filial Grace, Redmond, 98053, 釋迦牟尼佛, Buddha, 耶穌基督, Jesus Christ, 穆罕默德, Muhammad, 老子, Laozi, 孔子, Confucius, 濟公活佛, Ji Gong, 關聖帝君, Guan Gong, 彌勒佛, Maitreya, 月慧菩薩, 觀世音菩薩, 南海古佛" />
     <meta name="author" content="Temple of Filial Grace" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://filialgrace.org/" />
-    <meta property="og:title" content="孝恩佛堂 Temple of Filial Grace | Seattle I-Kuan Tao Center" />
+    <meta property="og:title" content="孝恩佛堂 Temple of Filial Grace" />
     <meta property="og:description" content="Temple of Filial Grace (孝恩佛堂) in Seattle - A spiritual center promoting harmony through the five great religions." />
     <meta property="og:image" content="https://filialgrace.org/og-image.jpg" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://filialgrace.org/" />
-    <meta property="twitter:title" content="孝恩佛堂 Temple of Filial Grace | Seattle I-Kuan Tao Center" />
+    <meta property="twitter:title" content="孝恩佛堂 Temple of Filial Grace" />
     <meta property="twitter:description" content="Temple of Filial Grace (孝恩佛堂) in Seattle - A spiritual center promoting harmony through the five great religions." />
     <meta property="twitter:image" content="https://filialgrace.org/og-image.jpg" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://filialgrace.org/" />
     
-    <!-- Google Fonts -->
+    <!-- Preload hero (LCP image) — media queries match src/index.css: desktop swaps in at min-aspect-ratio: 3/4 -->
+    <link rel="preload" as="image" href="/images/hero-bg.webp" type="image/webp" media="(min-aspect-ratio: 3/4)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/images/hero-bg-mobile.webp" type="image/webp" media="(max-aspect-ratio: 3/4)" fetchpriority="high" />
+
+    <!-- Google Fonts (async-loaded to avoid render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    </noscript>
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -74,9 +82,9 @@
     }
     </script>
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-09YJTS1SSN"></script>
-    <script>
+    <!-- Google Analytics (deferred; non-render-blocking) -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-09YJTS1SSN"></script>
+    <script defer>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());

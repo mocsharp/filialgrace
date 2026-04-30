@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import CookieConsent from './components/CookieConsent';
 import Home from './pages/Home';
-import Lectures from './pages/Lectures';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Privacy from './pages/Privacy';
-import Legal from './pages/Legal';
+const Lectures = lazy(() => import('./pages/Lectures'));
+const Calendar = lazy(() => import('./pages/Calendar'));
+const About = lazy(() => import('./pages/About'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Privacy = lazy(() => import('./pages/Privacy'));
+const Legal = lazy(() => import('./pages/Legal'));
 import './i18n';
 
 // Scroll to top on route change
@@ -58,6 +59,7 @@ function App() {
         <Header />
         
         <main id="main-content" className="flex-grow">
+          <Suspense fallback={<div className="min-h-screen" aria-hidden="true" />}>
           <Routes>
             <Route
               path="/"
@@ -65,7 +67,7 @@ function App() {
                 <>
                   <SEO
                     title="Home"
-                    description="Temple of Filial Grace (孝恩佛堂) - A spiritual center in Seattle promoting harmony through the teachings of Buddhism, Christianity, Islam, Taoism, and Confucianism."
+                    description="Temple of Filial Grace (孝恩佛堂) is a spiritual community in Redmond, WA fostering harmony through Buddhism, Christianity, Islam, Taoism, and Confucianism. Join our monthly study group and children's scripture classes."
                   />
                   <Home />
                 </>
@@ -77,9 +79,21 @@ function App() {
                 <>
                   <SEO
                     title="Lectures"
-                    description="Join our study groups and children's scripture classes. Monthly in-person sessions and irregular children's classes available."
+                    description="Free monthly Heart Sutra study group and children's scripture classes (Di Zi Gui, art & craft) at Temple of Filial Grace in Redmond, WA. All are welcome — register to join."
                   />
                   <Lectures />
+                </>
+              }
+            />
+            <Route
+              path="/calendar"
+              element={
+                <>
+                  <SEO
+                    title="Calendar"
+                    description="Upcoming services, study groups, and community events at Temple of Filial Grace in Redmond, WA. View our public calendar and add events to your own."
+                  />
+                  <Calendar />
                 </>
               }
             />
@@ -89,7 +103,7 @@ function App() {
                 <>
                   <SEO
                     title="About Us"
-                    description="Learn about the Temple of Filial Grace and the teachings of I-Kuan Tao (一貫道), promoting universal harmony through the five great religions."
+                    description="Temple of Filial Grace is a spiritual community in Redmond, WA promoting Buddhist, Taoist, and Confucian teachings. Learn our mission, the Purpose of Tao, and how the five great religions unite in our practice."
                   />
                   <About />
                 </>
@@ -101,7 +115,7 @@ function App() {
                 <>
                   <SEO
                     title="Contact Us"
-                    description="Contact Temple of Filial Grace in Union Hill, Redmond, WA 98053. Get in touch with us for more information."
+                    description="Get in touch with Temple of Filial Grace — located in the Union Hill area of Redmond, WA 98053 (Seattle metro). Email us about lectures, study groups, or visiting the temple."
                   />
                   <Contact />
                 </>
@@ -126,6 +140,7 @@ function App() {
               }
             />
           </Routes>
+          </Suspense>
         </main>
 
         <Footer />

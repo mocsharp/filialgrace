@@ -44,6 +44,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  to="/calendar"
+                  className="text-sm hover:text-primary-400 transition-colors focus:outline-none focus:underline"
+                >
+                  {t('nav.calendar')}
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/about"
                   className="text-sm hover:text-primary-400 transition-colors focus:outline-none focus:underline"
                 >
