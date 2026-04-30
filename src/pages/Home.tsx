@@ -10,14 +10,22 @@ const Home = () => {
   return (
     <div className="relative leading-none">
       {/* Section 1: Hero */}
-      <section className="relative min-h-screen flex flex-col justify-between pb-0 overflow-hidden block">
-        {/* Background Image - Mobile (portrait) version */}
-        <div className="absolute inset-0 bg-section-1-mobile bg-section-1-desktop bg-cover bg-top bg-no-repeat" style={{ backgroundColor: '#f0f9ff' }}>
-          {/* Gradient overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/60" />
-          {/* Warm overlay for temple feel */}
-          <div className="absolute inset-0 bg-yellow-50/40" />
-        </div>
+      <section className="relative min-h-screen flex flex-col justify-between pb-0 overflow-hidden block" style={{ backgroundColor: '#f0f9ff' }}>
+        {/* Hero image (LCP) — real <img> so paint isn't gated on CSS parsing */}
+        <picture>
+          <source media="(min-aspect-ratio: 3/4)" srcSet="/images/hero-bg.webp" />
+          <img
+            src="/images/hero-bg-mobile.webp"
+            alt=""
+            aria-hidden="true"
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 w-full h-full object-cover object-top"
+          />
+        </picture>
+        {/* Gradient + warm overlays */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/60" />
+        <div className="absolute inset-0 bg-yellow-50/40" />
 
         {/* Spacer to keep hero layout below fixed header */}
         <div className="pt-24 md:pt-32" />
