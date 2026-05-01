@@ -82,14 +82,8 @@
     }
     </script>
     
-    <!-- Google Analytics (deferred; non-render-blocking) -->
-    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-09YJTS1SSN"></script>
-    <script defer>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-09YJTS1SSN');
-    </script>
+    <!-- Google Analytics is loaded at runtime only after the user grants
+         consent via the cookie banner. See src/lib/analytics.ts. -->
   </head>
   <body>
     <div id="root"></div>

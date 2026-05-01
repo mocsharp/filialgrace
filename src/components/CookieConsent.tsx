@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { loadAnalytics } from '../lib/analytics';
+
 const CookieConsent = () => {
   const { t } = useTranslation();
   const [showBanner, setShowBanner] = useState(false);
@@ -10,12 +12,15 @@ const CookieConsent = () => {
     const consent = localStorage.getItem('cookieConsent');
     if (!consent) {
       setShowBanner(true);
+    } else if (consent === 'accepted') {
+      loadAnalytics();
     }
   }, []);
 
   const handleAccept = () => {
     localStorage.setItem('cookieConsent', 'accepted');
     setShowBanner(false);
+    loadAnalytics();
   };
 
   const handleDecline = () => {
