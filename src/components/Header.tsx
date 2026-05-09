@@ -12,6 +12,7 @@ const Header = () => {
     const newLang = i18n.language.startsWith('en') ? 'zh' : 'en';
     i18n.changeLanguage(newLang);
     document.documentElement.lang = newLang === 'zh' ? 'zh-Hant' : 'en';
+    window.localStorage.setItem('i18nextLng', newLang);
   };
 
   const navItems = [
