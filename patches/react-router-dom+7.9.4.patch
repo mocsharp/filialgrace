@@ -1,0 +1,21 @@
+diff --git a/node_modules/react-router-dom/package.json b/node_modules/react-router-dom/package.json
+index 7a0379f..6bff9b3 100644
+--- a/node_modules/react-router-dom/package.json
++++ b/node_modules/react-router-dom/package.json
+@@ -38,7 +38,15 @@
+         "default": "./dist/index.js"
+       }
+     },
+-    "./package.json": "./package.json"
++    "./package.json": "./package.json",
++    "./server.js": {
++      "import": "./dist/index.mjs",
++      "default": "./dist/index.js"
++    },
++    "./server": {
++      "import": "./dist/index.mjs",
++      "default": "./dist/index.js"
++    }
+   },
+   "wireit": {
+     "build": {

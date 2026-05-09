@@ -21,6 +21,7 @@ coverage
 dist
 dist-ssr
 build
+.vite-react-ssg-temp
 
 # Environment variables
 .env
