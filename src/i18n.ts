@@ -10,6 +10,7 @@ const resources = {
         home: 'Home',
         lectures: 'Lectures',
         calendar: 'Calendar',
+        channel: 'Channel',
         about: 'About',
         contact: 'Contact',
         title: '孝恩佛堂',
@@ -99,6 +100,46 @@ const resources = {
         intro: 'View our upcoming services, study groups, and community gatherings. Add events to your own calendar by clicking on them.',
         openInGoogle: 'Open in Google Calendar',
       },
+      // Channel Page (天道知音)
+      channel: {
+        title: '天道知音',
+        subtitle: 'Voice of Heavenly Tao',
+        intro: 'Our YouTube channel Voice of Heavenly Tao (天道知音) publishes spiritual content rooted in Heavenly Tao (天道) — drawn from Buddhist, Taoist, and Confucian wisdom — including podcasts, audio narration, music videos, and short-form teachings, with localized subtitles and metadata in seven languages so listeners worldwide can recognize, see, and brighten the light of their own true nature (自性).',
+        visitChannel: 'Visit our YouTube Channel',
+        showsTitle: 'Shows',
+        shows: {
+          awakening: {
+            name: '覺醒之路',
+            englishName: 'The Road to Awakening',
+            description: 'Multi-episode podcasts exploring classical texts — Tao Te Ching (道德經), Heart Sutra (心經), Platform Sutra (六祖壇經), Great Learning (大學), Doctrine of the Mean (中庸), Analects (論語) — one verse at a time, with companionship for daily practice.',
+          },
+          compassionate: {
+            name: '仙佛慈語',
+            englishName: 'Compassionate Words of the Saints',
+            description: 'Audio narration of 訓文 (divine teachings) given through 仙佛 — gentle, contemplative readings to accompany reflection.',
+          },
+          lightLamp: {
+            name: '點亮心燈',
+            englishName: 'Lighting the Heart Lamp',
+            description: 'Dharma talks grounded in Heavenly Tao (天道) books and scripture, aimed at helping listeners brighten the inner light of self-nature.',
+          },
+          holySong: {
+            name: '善歌',
+            englishName: 'Holy Songs',
+            description: 'Spiritual music videos with lyrics drawn from devotional and classical sources, translated and subtitled for an international audience.',
+          },
+          shorts: {
+            name: 'Shorts',
+            englishName: 'Short-form Teachings',
+            description: 'Bite-sized teachings based on 老師的話 (the Teacher\'s words) — quick reminders to turn inward, even on a busy day.',
+          },
+        },
+        elevenLabsBadge: 'Voice by ElevenLabs',
+        poweredBy: {
+          label: 'Voice narration partner',
+          description: 'AI-synthesized narration on 覺醒之路 (The Road to Awakening), 仙佛慈語 (Compassionate Words of the Saints), and Shorts is produced with',
+        },
+      },
       // Footer
       footer: {
         copyright: '© 2025 Temple of Filial Grace. All rights reserved.',
@@ -122,6 +163,7 @@ const resources = {
         home: '首頁',
         lectures: '課程',
         calendar: '行事曆',
+        channel: '天道知音',
         about: '關於我們',
         contact: '聯絡我們',
         title: '孝恩佛堂',
@@ -209,6 +251,46 @@ const resources = {
         subtitle: '近期活動與課程',
         intro: '歡迎瀏覽我們即將舉辦的法會、讀書會與社群活動。點擊活動可加入您的個人行事曆。',
         openInGoogle: '在 Google 行事曆中開啟',
+      },
+      // Channel Page (天道知音)
+      channel: {
+        title: '天道知音',
+        subtitle: 'YouTube 頻道',
+        intro: '「天道知音」是我們的 YouTube 頻道，以儒、釋、道三家智慧為根，製作 Podcast、訓文朗讀、善歌音樂影片與短片教化內容，並提供七種語言的字幕與翻譯，願世界各地的有緣人能夠認識祂、看見祂、點亮祂——讓自心本性再一次當家作主。',
+        visitChannel: '前往 YouTube 頻道',
+        showsTitle: '節目',
+        shows: {
+          awakening: {
+            name: '覺醒之路',
+            englishName: 'The Road to Awakening',
+            description: '以經典為骨——道德經、心經、六祖壇經、大學、中庸、論語——一句一集，溫和陪伴您的日常修行。',
+          },
+          compassionate: {
+            name: '仙佛慈語',
+            englishName: 'Compassionate Words of the Saints',
+            description: '仙佛慈悲批示的訓文有聲朗讀，沉靜溫潤，適合靜心反思時聆聽。',
+          },
+          lightLamp: {
+            name: '點亮心燈',
+            englishName: 'Lighting the Heart Lamp',
+            description: '以天道書籍與經典為底，講說生活中的修行與覺察，引領聽者點亮心中那盞自性的燈。',
+          },
+          holySong: {
+            name: '善歌',
+            englishName: 'Holy Songs',
+            description: '取自善書與經典的詞句譜成的善歌音樂影片，附多國語言字幕，與世界各地的有緣人分享。',
+          },
+          shorts: {
+            name: '短片',
+            englishName: 'Short-form Teachings',
+            description: '取自「老師的話」的短篇教化，一分鐘即可提醒自己回到當下、回到本心。',
+          },
+        },
+        elevenLabsBadge: '語音由 ElevenLabs 合成',
+        poweredBy: {
+          label: '語音合成夥伴',
+          description: '《覺醒之路》、《仙佛慈語》與 Shorts 短片的 AI 旁白語音由',
+        },
       },
       // Footer
       footer: {

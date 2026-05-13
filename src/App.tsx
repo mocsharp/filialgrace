@@ -39,6 +39,9 @@ const ABOUT_DESCRIPTION =
 const CONTACT_DESCRIPTION =
   'Get in touch with Temple of Filial Grace — located in the Union Hill area of Redmond, WA 98053 (Seattle metro). Email us about lectures, study groups, or visiting the temple.';
 
+const CHANNEL_DESCRIPTION =
+  'Temple of Filial Grace publishes spiritual content on YouTube 天道知音 — multi-episode podcasts on the Tao Te Ching and Heart Sutra, 訓文 narration, dharma talks, holy songs, and short-form teachings, with subtitles in seven languages.';
+
 export const routes: RouteRecord[] = [
   {
     path: '/',
@@ -77,6 +80,20 @@ export const routes: RouteRecord[] = [
               <>
                 <SEO title="Calendar" description={CALENDAR_DESCRIPTION} />
                 <Calendar />
+              </>
+            ),
+          };
+        },
+      },
+      {
+        path: 'channel',
+        lazy: async () => {
+          const { default: Channel } = await import('./pages/Channel');
+          return {
+            element: (
+              <>
+                <SEO title="天道知音 Channel" description={CHANNEL_DESCRIPTION} />
+                <Channel />
               </>
             ),
           };

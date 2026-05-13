@@ -52,6 +52,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  to="/channel"
+                  className="text-sm hover:text-primary-400 transition-colors focus:outline-none focus:underline"
+                >
+                  {t('nav.channel')}
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/about"
                   className="text-sm hover:text-primary-400 transition-colors focus:outline-none focus:underline"
                 >
