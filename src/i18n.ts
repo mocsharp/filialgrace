@@ -115,8 +115,8 @@ const resources = {
           },
           compassionate: {
             name: '仙佛慈語',
-            englishName: 'Compassionate Words of the Saints',
-            description: 'Audio narration of 訓文 (divine teachings) given through 仙佛 — gentle, contemplative readings to accompany reflection.',
+            englishName: 'Compassionate Words from the Buddhas',
+            description: 'Audio narration of divine teachings (訓文) given through the Buddhas (仙佛) — gentle, contemplative readings to accompany reflection.',
           },
           lightLamp: {
             name: '點亮心燈',
@@ -137,7 +137,7 @@ const resources = {
         elevenLabsBadge: 'Voice by ElevenLabs',
         poweredBy: {
           label: 'Voice narration partner',
-          description: 'AI-synthesized narration on 覺醒之路 (The Road to Awakening), 仙佛慈語 (Compassionate Words of the Saints), and Shorts is produced with',
+          description: 'AI-synthesized narration on 覺醒之路 (The Road to Awakening), 仙佛慈語 (Compassionate Words from the Buddhas), and Shorts is produced with',
         },
       },
       // Footer
@@ -267,7 +267,7 @@ const resources = {
           },
           compassionate: {
             name: '仙佛慈語',
-            englishName: 'Compassionate Words of the Saints',
+            englishName: 'Compassionate Words from the Buddhas',
             description: '仙佛慈悲批示的訓文有聲朗讀，沉靜溫潤，適合靜心反思時聆聽。',
           },
           lightLamp: {
